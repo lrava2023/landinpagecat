@@ -37,6 +37,32 @@
     min-height: 100vh;
     align-items: center;
  }
+
+ .audio-container {
+  display: inline-block;
+}
+
+.audio-container audio {
+  width: 150px;
+  height: 20px;
+  color: #39ff14;
+}
+.audio-container audio::-webkit-media-controls-panel {
+  background-color: #06e406; /* Cambia el color de fondo del panel */
+}
+
+.audio-container audio::-webkit-media-controls-play-button {
+  color: #000000; /* Cambia el color del botón de reproducción */
+}
+
+.audio-container audio::-webkit-media-controls-timeline {
+  background-color: #09f309; /* Cambia el color de la línea de tiempo */
+}
+
+.audio-container audio::-webkit-media-controls-current-time-display,
+.audio-container audio::-webkit-media-controls-time-remaining-display {
+  color: #000000; /* Cambia el color del tiempo de reproducción */
+}
   
   .menu{
     position: absolute;
